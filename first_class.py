@@ -1,3 +1,29 @@
+# Example
+MyCar = {"brand": "Ford", "model": "Mustang", "year": 1964}
+print(MyCar)
+
+# Access Values
+print(MyCar["model"])      # Mustang
+print(MyCar.get("brand"))  # Ford
+
+# Modify & Add
+MyCar["year"] = 2020       # Update
+MyCar["color"] = "Red"     # Add new
+
+# Nested Dictionary
+MyCars = {
+    "car1": {"brand": "Ford"},
+    "car2": {"brand": "Toyota"}
+}
+print(MyCars["car2"]["brand"])  # Toyota
+
+#       Common Methods
+# keys() → all keys
+# values() → all values
+# items() → key-value pairs
+# get() → safe access
+# update() → update dictionary
+
 thisdict = { 
     "Name": "Adii",
     "Age": 19,
@@ -16,23 +42,23 @@ thisdict["Age"] = 29
 thisdict.update({"Name": "Adil Khan"})
 thisdict.pop("Age")
 print(thisdict.get("Gander"))
-# print(thisdict)
+print(thisdict)
 
 
 # Create a sample dictionary
-# data = {"name": "Alice", "age": 30}
+data = {"name": "Alice", "age": 30}
 
-# # 1. Access an existing key
-# print(data.get("name"))
-# # Output: Alice
+# 1. Access an existing key
+print(data.get("name"))
+# Output: Alice
 
-# # 2. Access a non-existent key (returns None by default)
-# print(data.get("email"))
-# # Output: None
+# 2. Access a non-existent key (returns None by default)
+print(data.get("email"))
+# Output: None
 
-# # 3. Access a non-existent key with a custom default value
-# print(data.get("salary", "Not available"))
-# # Output: Not available
+# 3. Access a non-existent key with a custom default value
+print(data.get("salary", "Not available"))
+# Output: Not available
 
 student = {"Name": "Ali",
            "Age": "9",
